@@ -16,8 +16,8 @@ class ApplicationController < Sinatra::Base
     posts.to_json
   end
 
-  delete '/:id' do
-    posts = Posts.find(params[:id])
+  delete '/posts/posts' do
+    posts = Posts.find(params[:posts])
     posts.destroy
     posts.to_json
   end
