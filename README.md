@@ -20,7 +20,10 @@ The the following are the github repositories for both front end and backend
 ### Backend Setup
 Git and clone this repository `https://github.com/ARIERICYRON/phase-3-sinatra-react-project?organization=ARIERICYRON&organization=ARIERICYRON` to your local machine.
 1. open a new terminal and type `bundle install` to install gem packages that are dependencies for the backend.
-2. After they have been installed on the terminal `$ bundle exec rake server` to get the server running and This will run your server on port 
+2. In the terminal run `bundle exec rake db:migrate` to migrate the active record migrations.
+3. after migrations are done run in the terminal `bundle exec rake db:seed` to store some samples of data already created to the database.
+4. Now on the terminal run `$ bundle exec rake server` to get the server running and This will run your server on port 
+5. after the server has started running refressh your front end app. try creating posting an article. 
 
 ### Frontend Setup
 1. For the front end git and clone this repository `https://github.com/ARIERICYRON/phase-3-project` to your local machine.
